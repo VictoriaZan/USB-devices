@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', event=>{
+document.addEventListener('DOMContentLoaded', event=>{
     let button = document.getElementById('connect')
     
     button.addEventListener('click', async() => {
@@ -20,10 +20,10 @@
         }
         await device.close()
     })
-})*/
+})
 var device;
 
-navigator.usb.requestDevice({ filters: [{ vendorId: 0x0bc2 }] })
+/*navigator.usb.requestDevice({ filters: [{ vendorId: 0x0bc2 }] })
 .then(selectedDevice => {
    device = selectedDevice;
    return device.open(); // Begin a session.
@@ -42,3 +42,5 @@ navigator.usb.requestDevice({ filters: [{ vendorId: 0x0bc2 }] })
   console.log('Received: ' + decoder.decode(result.data));
 })
 .catch(error => { console.log(error); });
+
+*/
